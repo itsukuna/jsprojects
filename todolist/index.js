@@ -1,7 +1,7 @@
 const container = document.querySelector('.root');
 const heading = document.createElement('h1');
 
-heading.textContent="To-do List";
+heading.textContent="To Do List";
 
 const inputArea = document.createElement('div');
 const inputField = document.createElement('input');

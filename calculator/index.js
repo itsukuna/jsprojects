@@ -2,6 +2,12 @@ let nums = [];
 let currentNum = "";
 
 const container = document.querySelector(".root");
+
+const heading = document.createElement("h1")
+heading.textContent = "Calculator"
+heading.add
+container.appendChild(heading)
+
 const calculator = document.createElement("div");
 calculator.classList.add("calculator");
 container.appendChild(calculator);

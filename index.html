@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        li a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .container {
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Projects</h1>
+        <ul id="project-list">
+        </ul>
+
+        <script>
+            const projects = [
+                { name: 'To-Do List', path: './todolist/' },
+                { name: 'Simple Calculator', path: './calculator/' },
+            ];
+
+            function listProjects() {
+                const projectList = document.getElementById('project-list');
+
+                projects.forEach(project => {
+                    const listItem = document.createElement('li');
+
+                    const link = document.createElement('a');
+                    link.href = project.path;
+                    link.textContent = project.name;
+
+                    listItem.appendChild(link);
+
+                    projectList.appendChild(listItem);
+                });
+            }
+
+            listProjects();
+        </script>
+    </div>
+</body>
+
+</html>

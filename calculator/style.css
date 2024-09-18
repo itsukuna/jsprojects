@@ -45,3 +45,9 @@ button {
 .equal{
     background-color: #4CAF50;
 }
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
