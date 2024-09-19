@@ -4,7 +4,7 @@ This repository hosts various projects for showcasing purposes. Each project is 
 
 ## Live Demo
 
-You can view the live demo hosted on GitHub Pages: [Github Page](https://itsukuna.github.io/jsprojects/)
+You can view the live demo hosted on [GitHub Pages](https://itsukuna.github.io/jsprojects/)
 
 ## Projects
 
