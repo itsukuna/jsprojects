@@ -48,4 +48,4 @@ To add a new project to this list:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/itsukuna/jsprojects.git
