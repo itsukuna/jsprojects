@@ -2,7 +2,7 @@ const root = document.createElement('div')
 root.classList.add('container', 'd-flex', 'flex-column', 'align-items-center', 'mt-5');
 
 const title = document.createElement('h1')
-title.textContent = 'RAndom Joke Generator'
+title.textContent = 'Random Joke Generator'
 title.classList.add('display-4', 'text-center', 'mb-4', 'text-primary')
 
 function getJoke(){
@@ -13,7 +13,7 @@ function getJoke(){
 }
 
 const jokeElement = document.createElement('div')
-jokeElement.classList.add('card', 'p-4', 'text-centre')
+jokeElement.classList.add('card', 'p-4', 'text-center')
 function displayJoke(joke){
     jokeElement.textContent = `${joke.setup} - ${joke.delivery}`
 }
@@ -26,4 +26,9 @@ newJoke.classList.add('btn', 'btn-primary', 'mt-3', 'joke-btn')
 newJoke.addEventListener('click',getJoke)
 
 root.append(jokeElement, newJoke)
-document.body.append(title, root)
+
+const wrapper = document.createElement('div');
+wrapper.classList.add('d-flex', 'flex-column', 'justify-content-center', 'align-items-center', 'min-vh-100');
+wrapper.append(title, root);
+
+document.body.append(wrapper)
