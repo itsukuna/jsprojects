@@ -44,6 +44,7 @@ Here are the projects currently included in this repository:
   - Fetches random programming jokes using `JokeAPI`.
   - Displays the joke in a card layout.
   - Allows users to fetch a new joke by clicking the "New Joke" button.
+  - Uses `Bootstrap`.
 
 ## Adding New Projects
 

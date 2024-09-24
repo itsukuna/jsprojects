@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project List</title>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org/",
+            "@type":"web page",
+            "name":"JavaScript Practice Projects",
+            "discription":"A collection of JavaScript projects for educational purpose.",
+        }
+    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,6 +29,7 @@
         ul {
             list-style: none;
             padding: 0;
+            text-align: center;
         }
 
         li {
@@ -29,6 +38,10 @@
             padding: 15px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        li:hover {
+            transform: scale(1.05);
         }
 
         li a {
@@ -55,7 +68,7 @@
                 { name: 'To-Do List', path: './todolist/' },
                 { name: 'Simple Calculator', path: './calculator/' },
                 { name: 'Quiz', path: './quiz' },
-                { name: 'Joke Generator', path: './joke' }
+                { name: 'Joke Generator', path: './joke' },
             ];
 
             function listProjects() {
